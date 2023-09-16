@@ -1,0 +1,36 @@
+::selection {
+    background-color: rgb(243, 243, 243);
+    color: black;
+}
+
+@keyframes animation {
+    from {
+        transform: translateX(0);
+    }
+
+    50% {
+        background-color: black;
+        color: white;
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.animation img:nth-child(1) {
+    animation-name: animation;
+    animation-duration: 3s;
+    /* ==== Essa tag CSS fixa o item após o final da animação e não permite que ele volte ==== */
+    animation-fill-mode: forwards;
+}
+
+.formContainer {
+    max-width: 300px;
+}
+
+#hoverLight,
+#hoverDark {
+    width: 10px;
+    height: 25px;
+}

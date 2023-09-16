@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark" id="bodyTheme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==== Link css do bootstrap ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ==== Link do css local ==== -->
+    <link rel="stylesheet" href="main.css">
+    <title>Tela de login</title>
+</head>
+
+<body class="d-flex align-items-center py-3 px-4 bg-body-tertiary" id="themBody">
+    <main class="w-100 m-auto formContainer">
+        <form action="#" class="animation">
+            <img src="../src/bootstrap-social-logo.png" alt="Logo" class="rounded-circle mb-4" height="72" width="72">
+            <h1 class="fw-normal fs-3 py-2">Insira os dados de login</h1>
+            <!-- E-mail box -->
+            <div class="form-floating">
+                <input type="email" name="email" id="floatingInput" class="form-control" placeholder="Seu e-mail">
+                <label for="floatingInput">E-mail:</label>
+            </div>
+            <!-- Password box -->
+            <div class="form-floating">
+                <input type="password" name="senha" id="floatingInput" class="form-control" placeholder="Sua senha">
+                <label for="floatingInput">Senha:</label>
+            </div>
+            <!-- Botão de salvar dados -->
+            <div class="form-check tex-start my-3">
+                <input type="checkbox" name="box" id="flexCheckDefault" class="form-check-input">
+                <label for="flexCheckDefault" class="form-check-label">Lembre de mim</label>
+            </div>
+            <button class="btn btn-primary w-100 py-2">Logar</button>
+        </form>
+        <!-- Dark e light mode -->
+        <div class="my-4 w-25 bg-primary rounded-pill d-flex align-items-center justify-content-center py-1">
+            <button class="rounded-circle btn btn-dark mx-1" id="hoverLight" onclick="lightTheme()"></button>
+            <button class="rounded-circle btn btn-light mx-1" id="hoverDark"  onclick="darkTheme()"></button>
+        </div>
+    </main>
+    <!-- ==== Link para o main.js ==== -->
+    <script src="main.js"></script>
+    <!-- ==== Link do script para o bootstrap ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
